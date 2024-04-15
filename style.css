@@ -73,11 +73,11 @@ main{
   flex-wrap: wrap;
   justify-content: space-around;
   position: relative;
-  margin-top: 10%;
+
 }
 
 main > img{
-  width: 300px;
+  max-width: 300px;
   height: 300px;
   padding: 10px;
   margin: 40px 0px;
@@ -121,8 +121,6 @@ footer{
   display: flex;
   flex-direction: column;
   margin: 45px 0px 0px 0px;
-  position: absolute;
-  bottom: 0;
   width: 100%;
 }
 
@@ -144,4 +142,24 @@ li{
 .section3{
   text-align: center;
   margin: 20px 0px;
+}
+
+@media (max-width: 712px){
+  .button_join{
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 631px){
+  .main_button_join{
+    margin-top: 20px;
+  }
+  main > img{
+  max-width: 300px;
+  height: 300px;
+  padding: 0px;
+  }
+  footer{
+    margin: 0;
+  }
 }
